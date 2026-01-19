@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="/Icons/tic-tac-toe.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tic-Tac-Toe Games</h1>
+      <p>Try Tic-Tac-Toe with different styles and rules 😄</p>
+    </header>
+    <section class="main-page">
+      <div class="game" id="normal-xo">
+        <div class="card">
+          <div class="front">
+            <img src="Icons/XO_Records_logo.png" alt="" class="logo2" />
+            <h3 class="tit">Normal Tic-Tac-Toe</h3>
+            <span>Board => 3x3</span>
+          </div>
+          <div class="back">
+            It's a class Tic-Tac-Toe The first player to align 3 of their tokens
+            in a row, column, or diagonal wins.
+          </div>
+        </div>
+      </div>
+      <div class="game" id="numerical-xo">
+        <div class="card">
+          <div class="front">
+            <div class="logo1">1234</div>
+            <h3 class="tit">Numerical Tic-Tac-Toe</h3>
+            <span>Board => 3x3</span>
+          </div>
+          <div class="back">
+            Player 1 uses odd numbers (1, 3, 5, 7, 9) and Player 2 uses even
+            numbers (2, 4, 6, 8) and each number can only be used once. A player
+            wins by placing 3 numbers in a row, column, or diagonal that add up
+            to exactly 15.
+          </div>
+        </div>
+      </div>
+      <div class="game" id="5x5-xo">
+        <div class="card">
+          <div class="front">
+            <div class="logo1">5X5</div>
+            <h3 class="tit">5x5 Tic-Tac-Toe</h3>
+            <span>Board => 5x5</span>
+          </div>
+          <div class="back">
+            Players take turns placing their mark in an empty square until only
+            one square remains empty. This results in a total of 24 moves (12
+            for each player).The Player with more aligning 3 of his mark wins.
+          </div>
+        </div>
+      </div>
+      <div class="game" id="word-xo">
+        <div class="card">
+          <div class="front">
+            <div class="logo1">ABCD</div>
+            <h3 class="tit">Word Tic-Tac-Toe</h3>
+            <span>Board => 3x3</span>
+          </div>
+          <div class="back">
+            The first player to form a valid three-letter word horizontally,
+            vertically, or diagonally wins. The game is a draw if the board is
+            filled without a valid word being formed.
+          </div>
+        </div>
+      </div>
+      <div class="game" id="sus-xo">
+        <div class="card">
+          <div class="front">
+            <div class="logo1">SUS 😅</div>
+            <h3 class="tit">SUS Tic-Tac-Toe</h3>
+            <span>Board => 3x3</span>
+          </div>
+          <div class="back">
+            Player 1 uses 'S' and player 2 uses 'U'. A player scores a point for
+            each "S-U-S" sequence they create. The game ends when the board is
+            full. The player who has created the most "S-U-S" sequences wins.
+          </div>
+        </div>
+      </div>
+      <div class="game" id="connect4-xo">
+        <div class="card">
+          <div class="front">
+            <img src="Icons/connect4.png" alt="" class="logo2" />
+            <h3 class="tit">Connect 4 Tic-Tac-Toe</h3>
+            <span>Board => 6x7</span>
+          </div>
+          <div class="back">
+            Each Player place his mark in the bottom-most square in this
+            column.The first player to get four of their marks in a row
+            horizontally, vertically, or diagonally wins.
+          </div>
+        </div>
+      </div>
+      <div class="game" id="obstacles-xo">
+        <div class="card">
+          <div class="front">
+            <img src="Icons/barrier.png" alt="" class="logo2" />
+            <h3 class="tit">Obstacles Tic-Tac-Toe</h3>
+            <span>Board => 6x6</span>
+          </div>
+          <div class="back">
+            After every round (one turn for each player), two new obstacle cells
+            are randomly added to the board. These cells cannot be used by
+            either player. The first player to align 4 of their marks in a row
+            (horizontally, vertically, or diagonally) wins. The game is a draw
+            if the board fills without a winner.
+          </div>
+        </div>
+      </div>
+      <div class="game" id="memory-xo">
+        <div class="card">
+          <div class="front">
+            <img src="Icons/body-organ.png" alt="" class="logo2" />
+            <h3 class="tit">Memory Tic-Tac-Toe</h3>
+            <span>Board => 3x3</span>
+          </div>
+          <div class="back">
+            Whenaplayerplaces a mark, it is immediately hidden from view.
+            Players must remember the positions of all marks to plan their
+            strategy.The first player to align three of their hidden marks in a
+            row wins. The game is a draw if the board fills without a winner.
+          </div>
+        </div>
+      </div>
+      <div class="game" id="death-xo">
+        <div class="card">
+          <div class="front">
+            <img src="Icons/grim-reaper.png" alt="" class="logo2" />
+            <h3 class="tit">Misère Tic-Tac-Toe</h3>
+            <span>Board => 3x3</span>
+          </div>
+          <div class="back">Try to win and u will lose 💀</div>
+        </div>
+      </div>
+      <div class="game" id="infinity-xo">
+        <div class="card">
+          <div class="front">
+            <img src="Icons/infinity.png" alt="" class="logo2" />
+            <h3 class="tit">Infinity Tic-Tac-Toe</h3>
+            <span>Board => 3x3</span>
+          </div>
+          <div class="back">
+            After every three moves, the oldest mark on the board disappears.
+            The first player to align three marks in a row before any of those
+            marks vanish wins the game.
+          </div>
+        </div>
+      </div>
+      <div class="game" id="diamond-xo">
+        <div class="card">
+          <div class="front">
+            <img src="Icons/diamond_7960746.png" alt="" class="logo2" />
+            <h3 class="tit">Diamond Tic-Tac-Toe</h3>
+            <span>Board => 5x5</span>
+          </div>
+          <div class="back">
+            A player wins by simultaneously completing a line of 3 marks and a
+            line of 4 marks. The two lines must be in different directions
+            (e.g., one horizontal, one diagonal) but can share one common mark.
+          </div>
+        </div>
+      </div>
+      <div class="game" id="pyramid-xo">
+        <div class="card">
+          <div class="front">
+            <img src="Icons/pyramid.png" alt="" class="logo2" />
+            <h3 class="tit">Pyramid Tic-Tac-Toe</h3>
+            <span>Board => Pyramid Style</span>
+          </div>
+          <div class="back">
+            The same as Normal Tic-Tac-Toe The first player to align three of
+            their marks horizontally, vertically, or diagonally wins. but in
+            pyramid Style
+          </div>
+        </div>
+      </div>
+      <div class="game" id="chess-xo">
+        <div class="card">
+          <div class="front">
+            <img src="Icons/chess.png" alt="" class="logo2" />
+            <h3 class="tit">Chess Tic-Tac-Toe</h3>
+            <span>Board => 4x4</span>
+          </div>
+          <div class="back">
+            Rules:Players take turns moving one of their tokens to an adjacent
+            (horizontal or vertical) empty square. Tokens cannot move diagonally
+            or jump over other tokens. The first player to align three of their
+            tokens in a row, column, or diagonal wins.
+          </div>
+        </div>
+      </div>
+      <div class="game" id="ultimate-xo">
+        <div class="card">
+          <div class="front">
+            <img src="Icons/damage.png" alt="" class="logo2" />
+            <h3 class="tit">Easy Ultimate Tic-Tac-Toe</h3>
+            <span>Board => 9x9</span>
+          </div>
+          <div class="back">
+            Players take turns playing in any cell. The winner of a smaller
+            board claims that corresponding cell on the main board with their
+            symbol. The first player to win three smaller boards in a row
+            (horizontally, vertically, or diagonally) on the main 3x3 grid wins
+            the game.
+          </div>
+        </div>
+      </div>
+      <div class="game" id="real-ultimate-xo">
+        <div class="card">
+          <div class="front">
+            <img src="Icons/sword.png" alt="" class="logo2" />
+            <h3 class="tit">Real Ultimate Tic-Tac-Toe</h3>
+            <span>Board => 9x9</span>
+          </div>
+          <div class="back">
+            Check the rules inside it's hard to explain in this space.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-game">
+      <button id="back"><- Back To Menu</button>
+      <h2 id="hello"></h2>
+      <form id="enemy-type">
+        <input type="radio" id="player2" checked name="choose" />
+        <label for="player2">Human</label>
+        <input type="radio" id="computer" name="choose" />
+        <label for="computer">Computer</label>
+      </form>
+      <div id="score-board">
+        <span id="points1"></span>
+        <span id="points2"></span>
+      </div>
+      <!-- Don't Put AnyThing Here Plz -->
+      <h3 style="display: none">Current Game Points</h3>
+      <div id="current-points" style="display: none">
+        <span id="pp1"></span>
+        <span id="pp2"></span>
+      </div>
+      <div id="choose" style="display: none"></div>
+      <div id="sub-board" style="display: none"></div>
+      <div id="state">Player X Turn</div>
+      <div class="main-board"></div>
+      <button id="new-game">New Game</button>
+      <div id="rules">
+        <h2>Rules</h2>
+        <ul></ul>
+      </div>
+    </section>
+    <footer>
+      <p>
+        Done for a project for FCAI-Cairo University, under the supervision of
+        <a id="doc" href="https://scholar.cu.edu.eg/?q=mramly/" target="_blank"
+          >Dr. Mohammad El-Ramly</a
+        >
+      </p>
+      <p>
+        Made By
+        <a
+          href="https://www.linkedin.com/in/mahmoud-mohamed-194441348/"
+          target="_blank"
+          >Mahmoud Mohamed (DarkMody)</a
+        >
+      </p>
+    </footer>
+  </body>
+  <script src="JS/allWords.js"></script>
+  <script src="JS/main.js"></script>
+  <script src="JS/normal-xo.js"></script>
+  <script src="JS/obstacles-xo.js"></script>
+  <script src="JS/death-xo.js"></script>
+  <script src="JS/memory-xo.js"></script>
+  <script src="JS/connectFour-xo.js"></script>
+  <script src="JS/5x5-xo.js"></script>
+  <script src="JS/sus-xo.js"></script>
+  <script src="JS/numerical-xo.js"></script>
+  <script src="JS/diamond-xo.js"></script>
+  <script src="JS/word-xo.js"></script>
+  <script src="JS/pyramid-xo.js"></script>
+  <script src="JS/infinity-xo.js"></script>
+  <script src="JS/4x4-xo.js"></script>
+  <script src="JS/ultimate-xo.js"></script>
+  <script src="JS/realUltimate-xo.js"></script>
+</html>
