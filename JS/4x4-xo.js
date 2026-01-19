@@ -50,13 +50,13 @@ class Chess_XO extends Board {
     // Onclick Effect
     Array.from(this.board.children).forEach((ele) => {
       ele.onclick = () => {
-        if (ele.innerHTML == "X" && n_moves % 2 == 0) {
+        if (ele.innerHTML == "X" && n_moves % 2 == 0 && !this.gameOver) {
           this.checkAround(
             ele.getAttribute("x") - 1,
             ele.getAttribute("y") - 1,
             ele.style.color,
           );
-        } else if (ele.innerHTML == "O" && n_moves % 2 == 1) {
+        } else if (ele.innerHTML == "O" && n_moves % 2 == 1 && !this.gameOver) {
           this.checkAround(
             ele.getAttribute("x") - 1,
             ele.getAttribute("y") - 1,
