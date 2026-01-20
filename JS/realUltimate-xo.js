@@ -58,7 +58,7 @@ class RealUltimate_XO extends Board {
     // Onclick Effect
     Array.from(this.board.children).forEach((ele) => {
       ele.onclick = () => {
-        // ele.style.background = "rgb(25, 26, 47)";
+        ele.style.background = "rgb(25, 26, 47)";
         if (
           ele.classList.contains("active") &&
           !ele.classList.contains("done")
